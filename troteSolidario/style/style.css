@@ -1,0 +1,38 @@
+/* configurações gerais */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+header {
+    width: 100%;
+    padding: 25px 0px;
+    background-color: #9684F3;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+nav{
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #849FE9;
+}
+#linkMenu{
+    display: flex;
+    gap: 50px;
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #A069FC;
+    padding: 10px;
+    border-radius: 5px;
+}
+.link:hover{
+    transform: scale(1.2);
+}
