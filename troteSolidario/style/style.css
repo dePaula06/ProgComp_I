@@ -1,6 +1,6 @@
 /* configurações gerais */
 body {
-    font-family: monospace;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
@@ -8,11 +8,15 @@ body {
 }
 header {
     width: 100%;
-    padding: 25px 0px;
+    padding: 10px 0px;
     background-color: #9684F3;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
 }
 nav{
     padding: 25px 100px;
@@ -35,4 +39,8 @@ nav{
 }
 .link:hover{
     transform: scale(1.2);
+}
+.imgMascote{
+    width: 75px;
+    height: 75px;
 }
