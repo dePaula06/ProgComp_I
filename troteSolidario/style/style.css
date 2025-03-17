@@ -44,3 +44,13 @@ nav{
     width: 75px;
     height: 75px;
 }
+.containerIntroduction{
+    text-align: justify;
+    padding: 50px 100px;
+}
+.paragrafo1{
+    margin-top: 25px;
+}
+.title{
+    font-size: 2rem;
+}
