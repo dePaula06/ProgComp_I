@@ -54,3 +54,37 @@ nav{
 .title{
     font-size: 2rem;
 }
+table {
+    /* esp. externo de 0 acima e abaixo e automático esq. dir. */
+    margin: 0 auto; 
+}
+.laranja {
+    background-color: orange;
+}
+.azul {
+    background-color: blue;
+    color: white;
+}
+.preta {
+    background-color: black;
+    color: white;
+}
+.roxo {
+    background-color: purple;
+}
+.verde {
+    background-color: green;
+}
+.vermelha {
+    background-color: red;
+}
+.campos{
+    margin-bottom: 25px;
+    border: 2px solid #849FE9;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
