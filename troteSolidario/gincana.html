@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trote Solidário - 2025</title>
     <link rel="stylesheet" href="style/style.css" />
+    <script src="js/index.js"> </script>
 </head>
 
 <body>
+    <!-- cabeçalho da página -->
     <header>
         <!-- cabeçalho do corpo da página -->
         Trote Solidário 2025
         <img src="https://ctec.saude.ms.gov.br/wp-content/uploads/2023/02/Group-1875.png" alt="Trote Solidário"
             class="imgMascote" />
     </header>
+    <!-- menu de navegação -->
     <nav>
         <div id="linkMenu">
             <a href="index.html" class="link"> Home </a>
@@ -27,8 +30,10 @@
             <a href="calculadoras.html" class="link"> Calculadoras </a>
         </div>
     </nav>
-    <div class="containerIntroduction">
-        <h2 class="title">Gincana</h2>
+    <!-- class podemos reutilizar o estilho, id não -->
+    <!-- id não pode ser reutilizado pois só temos um elemento por id -->
+    <div class="container">
+        <h2> Gincana Solidária </h2>
         <p>
             Serão formadas equipes pela Reitoria, conforme Tabelas 1 e 2, de acordo com a quantidade de estudantes
             matriculados em cada curso (Tabela 2), de forma a garantir a equidade entre as equipes.
@@ -53,42 +58,47 @@
             conforme determinação deste Regulamento.
         </p>
         <table border="1">
-            <tr class="azul"> <!-- table header -->
-                <th> Equipe* </th>
-                <th> Cursos </th>
-                <th> Alunos </th>
-                <th> Padrinhos </th>
-            </tr>
-            <tr> <!-- br é break row-->
-                <td class="laranja"> Laranja </td>
-                <td> Matemática <br /> Letras <br /> Engenharia de Software </td>
-                <td> 97 </td>
-                <td> EM BREVE </td>
-            </tr>
-            <tr> <!-- br é break row-->
-                <td class="preta"> Preta </td>
-                <td> Medicina <br /> Enfermagem </td>
-                <td> 103 </td>
-                <td> EM BREVE </td>
-            </tr>
-            <tr> <!-- br é break row-->
-                <td class="roxo"> Roxa </td>
-                <td> Comunic. Social – PP <br /> Sistemas de Informação <br /> Ciência da Computação</td>
-                <td> 102 </td>
-                <td> EM BREVE </td>
-            </tr>
-            <tr> <!-- br é break row-->
-                <td class="verde"> Verde </td>
-                <td> Engenharia de Produção <br /> Engenharia Civil </br> Psicologia </td>
-                <td> 88 </td>
-                <td> EM BREVE </td>
-            </tr>
-            <tr> <!-- br é break row-->
-                <td class="vermelha"> Vermelha </td>
-                <td> Administração <br /> Ciências Contábeis </td>
-                <td> 93 </td>
-                <td> EM BREVE </td>
-            </tr>
+            <thead> <!-- cabeçalho da tabela -->
+                <tr class="azul">
+                    <th> Equipe </th>
+                    <th> Cursos </th>
+                    <th> Alunos </th>
+                    <th> Padrinhos </th>
+                </tr>
+            </thead>
+            <tbody> <!-- corpo da tabela -->
+                <tr>
+                    <!-- class pode ser reutilizado em outros elementos -->
+                    <td class="laranja">Laranja</td>
+                    <td> Matemática <br /> Letras <br /> Eng. Soft. </td>
+                    <td> 97 </td>
+                    <td> Profa. Letícia <br /> Prof. Carlão <br /> Prof. Priscila </td>
+                </tr>
+                <tr>
+                    <td class="preta"> Preta </td>
+                    <td> Medicina <br /> Enfermagem </td>
+                    <td> 103 </td>
+                    <td> Em breve </td>
+                </tr>
+                <tr>
+                    <td class="roxa"> Roxa </td>
+                    <td> Comunic Social <br /> Sist inform </br> Ciência Comp. </td>
+                    <td> 102 </td>
+                    <td> Em breve </td>
+                </tr>
+                <tr>
+                    <td class="verde"> Verde </td>
+                    <td> Eng Prod. <br /> Eng. Civil <br /> Psico </td>
+                    <td> 88 </td>
+                    <td> Em breve </td>
+                </tr>
+                <tr>
+                    <td class="vermelha"> Vermelha </td>
+                    <td> Administração <br /> Ciências Cont. </td>
+                    <td> 93 </td>
+                    <td> Em breve </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
