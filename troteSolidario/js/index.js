@@ -15,7 +15,7 @@ function calcular(){
    // recupera a cor da equipe
    let equipe = document.getElementById("equipe").value
     // recupera a qtde de latas de suplemento
-   let suplemento = document.getElementById("suplemento").value
+   let suplemento = Number(document.getElementById("suplemento").value)
    let pontosKitSupl = 0 // guarda pontuação de kit + supl
    if (equipe == "Laranja"){
        // equipe é laranja
@@ -31,12 +31,7 @@ function calcular(){
        else if (kit >= 19 && suplemento >=10){
            pontosKitSupl = 1000 + ((kit - 19) * 30) + ((suplemento - 10) * 15)
        }
-       else {
-           pontosKitSupl = 0
-       }
-   }
-
-   if (equipe == "Preta"){
+   } else if(equipe == "Preta"){
     // equipe é preta
     if (kit >= 103 && suplemento >= 52) {
         pontosKitSupl = 5000 + ((kit - 103) * 30) + ((suplemento - 52) * 15)
@@ -50,12 +45,7 @@ function calcular(){
     else if (kit >= 21 && suplemento >=10){
         pontosKitSupl = 1000 + ((kit - 21) * 30) + ((suplemento - 10) * 15)
     }
-    else {
-        pontosKitSupl = 0
-    }
-}
-
-if (equipe == "Roxa"){
+} else if (equipe == "Roxa"){
     // equipe é roxa
     if (kit >= 102 && suplemento >= 51) {
         pontosKitSupl = 5000 + ((kit - 102) * 30) + ((suplemento - 51) * 15)
@@ -69,12 +59,7 @@ if (equipe == "Roxa"){
     else if (kit >= 20 && suplemento >=10){
         pontosKitSupl = 1000 + ((kit - 20) * 30) + ((suplemento - 10) * 15)
     }
-    else {
-        pontosKitSupl = 0
-    }
-}
-
-if (equipe == "Verde"){
+} else if (equipe == "Verde"){
     // equipe é verde
     if (kit >= 88 && suplemento >= 44) {
         pontosKitSupl = 5000 + ((kit - 88) * 30) + ((suplemento - 44) * 15)
@@ -88,12 +73,7 @@ if (equipe == "Verde"){
     else if (kit >= 18 && suplemento >=9){
         pontosKitSupl = 1000 + ((kit - 18) * 30) + ((suplemento - 9) * 15)
     }
-    else {
-        pontosKitSupl = 0
-    }
-}
-
-if (equipe == "Vermelha"){
+} else{
     // equipe é vermelha
     if (kit >= 93 && suplemento >= 47) {
         pontosKitSupl = 5000 + ((kit - 93) * 30) + ((suplemento - 47) * 15)
@@ -106,9 +86,6 @@ if (equipe == "Vermelha"){
     }
     else if (kit >= 19 && suplemento >=9){
         pontosKitSupl = 1000 + ((kit - 19) * 30) + ((suplemento - 9) * 15)
-    }
-    else {
-        pontosKitSupl = 0
     }
 }
    soma = soma + pontosKitSupl
